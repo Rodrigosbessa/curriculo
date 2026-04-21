@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.4;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 24pt;
+    letter-spacing: 2px;
+}
+
+.content {
+    display: flex; /* Mantém colunas no ecrã */
+    gap: 30px;
+}
+
+.sidebar {
+    flex: 0 0 30%; /* Fixa a largura em 30% */
+}
+
+.main-content {
+    flex: 1; /* Ocupa o resto */
+}
+
+h3 {
+    font-size: 11pt;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.sidebar p, .sidebar li { font-size: 9pt; margin-bottom: 5px; list-style: none; }
+.main-content p, .main-content li { font-size: 10pt; margin-bottom: 10px; text-align: justify; }
+
+.entry .title { font-weight: bold; font-size: 11pt; }
+.entry .subtitle { color: #666; font-size: 9pt; }
+
+/* REGRA DE OURO PARA IMPRESSÃO */
+@media print {
+    body { background-color: #fff; padding: 0; }
+    .container { 
+        box-shadow: none; 
+        margin: 0; 
+        width: 100%; 
+        max-width: 100%;
+        padding: 0;
+    }
+    .content { 
+        display: flex !important; /* Força as colunas a ficarem lado a lado */
+        flex-direction: row !important;
+    }
+    .sidebar { width: 30% !important; }
+    .main-content { width: 70% !important; }
+    
+    /* Remove espaços em branco extra */
+    h3 { margin-top: 15px; }
+}
