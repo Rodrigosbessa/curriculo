@@ -16,7 +16,7 @@ body {
     width: 210mm;
     background: #fff;
     margin: 0 auto;
-    padding: 10mm 15mm;
+    padding: 8mm 12mm;
     display: block;
 }
 
@@ -50,7 +50,7 @@ header h1 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 12px; 
+    margin-top: 8px; 
     margin-bottom: 5px;
     color: #444;
 }
@@ -62,7 +62,7 @@ header h1 {
     color: #555;
 }
 .sidebar p {
-    line-height: 2.2;
+    line-height: 1.6;
 }
 
 .main-content {
@@ -73,7 +73,7 @@ header h1 {
 }
 
 .main-content section {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 h3 {
     font-size: 11pt;
@@ -127,13 +127,34 @@ ul {
 }
 
 .entry .subtitle a {
-    color: #444; /* Cor escura para parecer texto normal */
-    font-weight: 600; /* Um pouco de negrito para destacar */
+    color: #444;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid #ccc; /* Um sublinhado discreto */
+    border-bottom: 1px solid #ccc; 
 }
 
 .entry .subtitle a:hover {
     color: #000;
     border-bottom: 1px solid #000;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 100px;         
+    height: 100px;
+    border-radius: 50%;  
+    object-fit: cover;     
+    border: 2px solid #eee; 
+
+}
+
+.sidebar section {
+    margin-bottom: 10pxd; 
 }
