@@ -64,7 +64,7 @@
                 <section>
                     <h3>ABOUT ME</h3>
                     <p>
-                        I am a Computer Science student focused on practical projects. I developed Faturix.org, where I configured the Django backend, PostgreSQL databases, and implemented security with MFA (Twilio) and Cloudflare. Beyond development, I have been investing in Networking and Cybersecurity through Cisco certifications (CCNA). I am looking for a Computer Science internship to apply these technical skills in a professional environment and grow within the company long-term.
+                        I am a Computer Engineering student focused on building robust and scalable systems. I have developed high-impact practical projects, such as <strong>EletroSync</strong>, a low-latency distributed price aggregation platform built with Node.js using the Scatter-Gather pattern, and <strong>Faturix.org</strong>, where I configured a Django ecosystem integrated with PostgreSQL, MFA (Twilio), and Cloudflare. Beyond backend development, I actively invest in infrastructure, networking, and cybersecurity through Cisco certifications (CCNA). I am looking for a Computer Engineering internship to apply and expand these technical skills, with a strong focus on long-term growth within the company.
                     </p>
                 </section>
 
@@ -78,12 +78,28 @@
 
                 <section>
                     <h3>ACADEMIC PROJECTS</h3>
+                    
+                    <div class="entry">
+                        <span class="title">ELETROSYNC – DISTRIBUTED PRICE COMPARISON SYSTEM</span>
+                        <p class="subtitle">💻 github.com/RubenPereira2005/EletroSync | 🚀 Live Demo: 
+                            <a href="https://eletrosync.site" target="_blank">eletrosync.site</a>
+                        </p>
+                        <ul>
+                            <li>Team-developed platform for real-time price aggregation featuring a low-latency distributed architecture.</li>
+                            <li>Implemented the Scatter-Gather pattern to handle concurrent, asynchronous queries across multiple APIs simultaneously.</li>
+                            <li>Developed a persistent JSON-based cache layer with adaptive TTL and optimized routing mechanisms via Rate Limiting.</li>
+                            <li>Engineered system resilience using custom timeouts, fault isolation (AbortController), and thundering herd protection.</li>
+                            <li>Handled secure user authentication and data privacy in Supabase through strict Row Level Security (RLS) policies.</li>
+                            <li><strong>Technologies:</strong> Node.js, Express, Supabase (PostgreSQL), Serper API, Resend, Docker, Render.</li>
+                        </ul>
+                    </div>
+
                     <div class="entry">
                         <span class="title">RESTAURANT MANAGEMENT SYSTEM (JSP & MARIADB)</span>
                         <p class="subtitle">💻 github.com/Rodrigosbessa/vicario_restaurante</p>
                         <ul>
                             <li>Web application featuring Customer, Employee, and Admin profiles, supporting take-away orders, table management, and analytics (billing and top-selling dishes).</li>
-                            <li>Technologies: JSP, HTML/CSS/JS, Docker, Tomcat, hosted via Render.</li>
+                            <li><strong>Technologies:</strong> JSP, HTML/CSS/JS, Docker, Tomcat, hosted via Render.</li>
                         </ul>
                     </div>
 
@@ -93,9 +109,9 @@
                             <a href="https://faturix.org" target="_blank">faturix.org</a>
                         </p>
                         <ul>
-                            <li>Development and continuous improvement of a web-based billing system, currently in production, supporting the issuance of invoices, waybills, and receipts.</li>
+                            <li>Development and continuous improvement of a web-based billing system, currently in production and live online, supporting the issuance of invoices, waybills, and receipts.</li>
                             <li>Built with Django (Python), hosted on Render, with a PostgreSQL database managed via Neon.</li>
-                            <li>Custom domain managed through Cloudflare, featuring Multi-Factor Authentication (MFA) via Twilio API.</li>
+                            <li>Custom domain managed through Cloudflare, featuring Multi-Factor Authentication (MFA) via the Twilio API.</li>
                             <li>Designed for a non-certified environment, without direct integration with the Tax Authority (non-certified billing software).</li>
                         </ul>
                     </div>
